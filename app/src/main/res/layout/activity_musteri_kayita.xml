@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".musteriKayita"
+    android:background="@color/material_dynamic_primary90">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="217dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:visibility="visible" />
+
+    <EditText
+        android:background="@color/material_dynamic_tertiary90"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:background="@color/material_dynamic_tertiary90"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Kullanıcı Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+
+        android:background="@color/material_dynamic_tertiary90"
+        android:id="@+id/editTextPhone"
+        android:layout_width="283dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:background="@color/material_dynamic_tertiary90"
+        android:id="@+id/editTextDate"
+        android:layout_width="285dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Doğum Tarihi"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteY="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
